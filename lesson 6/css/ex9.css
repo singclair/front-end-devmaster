@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #EDEDED;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+.industries-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.industries-section img {
+    width: 45%;
+}
+.industries-content {
+    width: 45%;
+}
+.industries-content h2 {
+    font-size: 24px;
+}
+.industries-content p {
+    margin-top: 10px;
+}
+.contact-btn {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #0055AA;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}

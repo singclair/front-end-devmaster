@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* nav bar */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+/* nav menu items */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    transition: all 0.3s; /* Add transition for smooth appearance */
+    opacity: 0; /* Initially set opacity to 0 */
+    max-height: 0; /* Initially set max-height to 0 */
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.icon-menu {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+nav > div {
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        max-height: 100%; /* Reset max-height for vertical layout */
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+.icon-menu span {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.3s; /* Add transition for smooth hover effect */
+}
+
+.icon-menu:hover span:nth-child(1) {
+    transform: rotate(45deg) translateY(2px);
+}
+
+.icon-menu:hover span:nth-child(2) {
+    opacity: 0;
+}
+
+.icon-menu:hover span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-2px);
+}
+
+/* Show the nav menu on icon-menu hover */
+nav > div:hover + ul,
+nav ul:hover {
+    display: flex; /* Change to flex to display items */
+    max-height: 100%; /* Set max-height to show the items */
+    opacity: 1; /* Set opacity to 1 to make them visible */
+}
