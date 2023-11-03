@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in html5</title>
+</head>
+<body>
+    <h1>form in html5</h1>
+    <hr>
+    <!--the giu nguyen cau truc-->
+    <pre>
+        -input:
+            +type: txt, pw, checkbox, radio;
+                    number, range, email, tel, 
+                    search, color, date, time, ....
+            +name:
+            +id:
+
+        -select: 
+            +name, id
+            +option: 
+        -btn:
+            type: submit
+    </pre>
+    <!--put inside form to work-->
+    <form action="" name="frm" method="">
+        <p>
+            text:
+            <input type="text" name="txt" id="txt" placeholder="nhap noi dung" required>
+        </p>
+    
+        <p>
+            <input type="submit" value="submit">
+        </p>
+        <p>
+            hidden: 
+            <input type="hidden" name="token" value=""/>
+        </p>
+        <p>
+            password:
+            <input type="password" name="pass" id="pass" placeholder="input password here">
+        </p>
+        <p>
+            email: 
+            <input type="email" name="email" id="email" 
+            placeholder="example@domain.com"
+            pattern="">
+        </p>
+        <p>
+            checkbox:
+            <input type="checkbox" name="chk1" id="chk1">
+            <label for="chk1">so thich 1</label>
+            
+            <input type="checkbox" name="chk2" id="chk2">
+            <label for="chk2">so thich 2</label>
+            
+            <input type="checkbox" name="chk3" id="chk3">
+            <label for="chk3">so thich 3</label>
+        </p>
+        <p>
+            radio:
+            <input type="radio" name="rd1" id="rd1" checked>
+            <label for="rd1">Nam</label>
+            
+            <input type="radio" name="rd1" id="rd1" checked>
+            <label for="rd1">Nam</label>
+            
+            <input type="radio" name="rd1" id="rd1" checked>
+            <label for="rd1">Nam</label>
+        </p>
+
+        <p>
+            Date: 
+            <input type="date" name="ngay sinh", id="ngaysinh">
+        </p>
+
+        <p>
+            <input type="submit" value="submit">
+        </p>
+
+        <p>
+            color:
+            <input type="color" value="#f1f2f3">
+        </p>
+        <p>
+            number:
+            <input type="number" name="num" id="num" value="10" min="1" max="20">
+        </p>
+        <p>
+            <input type="range" name="range" id="range" value="80">
+        </p>
+        phone...
+        pattern...
+        file.
+        enctype.... enctype="multipart/form-data"
+        learn regular expression regex
+        option tag
+        form2.js ...
+        textarea ...
+
+        <input type="reset" value="Reset">
+        input reset: tra lai trang thai ban dau cua form
+        <textarea name="" id="" cols="10" rows="5"></textarea>
+    </form>
+
+
+    ---------------------------
+
+    <form action="">
+        <table border="1" width="50%" align="center">
+            <thead >
+                <tr>
+                    <th >
+                        <h1>login info</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tai khoan</td>
+                    <td>
+                        <input type="email" name="tk" id="tk"
+                        placeholder="nhap tai khoan"
+                        required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mat khau</td>
+                    <td>
+                        <input type="password" name="mk" id="mk"
+                    placeholder="nhap mat khau"
+                    required>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    ---------------------------
+    
+    <p align="center">
+        ho va ten:
+        
+            <input type="text">
+        
+    </p>
+    <p>
+        ten dang nhap
+        <input type="text">
+    </p>
+    <p>
+        mat khau:
+        <input type="text">
+    </p>
+    <p>
+        anh dai dien:
+        <input type="file">
+    </p>
+    <p>
+        thu dien tu:
+        <input type="text">
+    </p>
+    <p>
+        gioi tinh: 
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="male">Nam</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="female">Nu</label><br>
+    </p>
+    <p>
+        lich
+        <input type="date">
+    </p>
+    <p>
+        color
+        <input type="color">
+    </p>
+    <p>
+        number:
+        <input type="number">
+    </p>
+    <p>
+        range: 
+        <input type="range">
+    </p>
+    dia chi
+    dien thoai
+    mo ta ngan
+    <p>
+        dia chi:
+        <address>
+
+        </address>
+    </p>
+    <p>
+        <button type="button">click me</button>
+        <button type="reset">reset</button>
+    </p>
+</body>
+
+    ---------------------------
+
+
+</html>
